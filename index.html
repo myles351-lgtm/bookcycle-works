@@ -34,8 +34,48 @@
     </div>
   </nav>
 
-  <!-- Hero, Quick Info, How It Works (unchanged for brevity) -->
-  <!-- [All previous sections are included in the full paste below] -->
+  <!-- Hero -->
+  <section id="home" class="hero-bg text-white py-24 section">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold mb-4">Free Used Book Pickup Service</h2>
+      <p class="text-2xl mb-8">Dayton, Ohio • Nationwide for Large Collections</p>
+      <a href="#schedule" class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white text-2xl px-10 py-5 rounded-2xl font-bold transition shadow-lg">
+        Schedule Your Free Pickup Now →
+      </a>
+    </div>
+  </section>
+
+  <!-- Quick Info -->
+  <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition text-center">
+      <i class="fas fa-truck fa-3x text-emerald-600 mb-4"></i>
+      <h3 class="text-2xl font-semibold mb-2">Free Pickup</h3>
+      <p class="text-gray-600">Dayton area + nationwide for large collections</p>
+    </div>
+    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition text-center">
+      <i class="fas fa-home fa-3x text-emerald-600 mb-4"></i>
+      <h3 class="text-2xl font-semibold mb-2">At Your Door</h3>
+      <p class="text-gray-600">Convenient pickup in Dayton and beyond</p>
+    </div>
+    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition text-center">
+      <i class="fas fa-leaf fa-3x text-emerald-600 mb-4"></i>
+      <h3 class="text-2xl font-semibold mb-2">Eco-Friendly</h3>
+      <p class="text-gray-600">Books reused or donated responsibly</p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="bg-white py-16 section">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">How It Works</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div><div class="w-16 h-16 mx-auto bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-3xl mb-4">1️⃣</div><h4 class="font-semibold">Schedule Online</h4></div>
+        <div><div class="w-16 h-16 mx-auto bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-3xl mb-4">2️⃣</div><h4 class="font-semibold">We Pick Up</h4></div>
+        <div><div class="w-16 h-16 mx-auto bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-3xl mb-4">3️⃣</div><h4 class="font-semibold">Books Get New Life</h4></div>
+        <div><div class="w-16 h-16 mx-auto bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-3xl mb-4">4️⃣</div><h4 class="font-semibold">Zero Cost to You</h4></div>
+      </div>
+    </div>
+  </section>
 
   <!-- Schedule Form -->
   <section id="schedule" class="py-16 bg-gray-100 section">
@@ -47,8 +87,7 @@
         <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
         <input type="hidden" name="subject" value="New Book Pickup Request - Dayton">
         <input type="hidden" name="from_name" value="BookCycle Works">
-
-        <!-- Sends as TEXT MESSAGE to your T-Mobile phone -->
+        <!-- T-Mobile SMS -->
         <input type="hidden" name="email" value="3266880972@tmomail.net">
 
         <div class="grid grid-cols-2 gap-4">
@@ -111,8 +150,8 @@
         </div>
 
         <div>
-          <label class="block text-sm font-medium mb-2">Special notes?</label>
-          <textarea name="notes" rows="4" class="w-full border border-gray-300 rounded-3xl px-4 py-3 focus:outline-none focus:border-emerald-500" placeholder="Large collection, boxes, etc..."></textarea>
+          <label class="block text-sm font-medium mb-2">Special notes? (large collection, boxes, etc.)</label>
+          <textarea name="notes" rows="4" class="w-full border border-gray-300 rounded-3xl px-4 py-3 focus:outline-none focus:border-emerald-500" placeholder="Tell us more about your collection..."></textarea>
         </div>
 
         <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-5 rounded-3xl text-xl font-semibold transition">
