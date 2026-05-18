@@ -172,16 +172,10 @@
 
   <script>
     document.getElementById('pickupForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      this.classList.add('hidden');
-      document.getElementById('successMessage').classList.remove('hidden');
-    });
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
+      setTimeout(() => {
+        document.getElementById('pickupForm').classList.add('hidden');
+        document.getElementById('successMessage').classList.remove('hidden');
+      }, 800);
     });
   </script>
 </body>
