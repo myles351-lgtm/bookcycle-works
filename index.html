@@ -83,12 +83,10 @@
       <h1 class="text-4xl font-bold text-center mb-2">Schedule Your Free Pickup</h1>
       <p class="text-center text-emerald-600 mb-10">Dayton, Ohio • Nationwide for large collections</p>
 
-      <form action="https://api.web3forms.com/submit" method="POST" id="pickupForm" class="bg-white shadow-xl rounded-3xl p-8 space-y-8">
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
-        <input type="hidden" name="subject" value="New Book Pickup Request - Dayton">
-        <input type="hidden" name="from_name" value="BookCycle Works">
-        <!-- Sends TEXT MESSAGE to your T-Mobile phone -->
-        <input type="hidden" name="email" value="3266880972@tmomail.net">
+      <form action="https://formsubmit.co/myles351@gmail.com" method="POST" id="pickupForm" class="bg-white shadow-xl rounded-3xl p-8 space-y-8">
+        <input type="hidden" name="_subject" value="New Book Pickup Request!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://myles351-lgtm.github.io/bookcycle-works/">
 
         <div class="grid grid-cols-2 gap-4">
           <div>
@@ -150,7 +148,7 @@
         </div>
 
         <div>
-          <label class="block text-sm font-medium mb-2">Special notes? (large collection, boxes, etc.)</label>
+          <label class="block text-sm font-medium mb-2">Special notes?</label>
           <textarea name="notes" rows="4" class="w-full border border-gray-300 rounded-3xl px-4 py-3 focus:outline-none focus:border-emerald-500" placeholder="Tell us more about your collection..."></textarea>
         </div>
 
@@ -162,7 +160,7 @@
       <div id="successMessage" class="hidden mt-8 bg-emerald-100 border border-emerald-300 rounded-3xl p-8 text-center">
         <i class="fas fa-check-circle text-emerald-600 text-6xl mb-4"></i>
         <h3 class="text-3xl font-bold text-emerald-800">Request Received!</h3>
-        <p class="text-emerald-700 mt-3">Thank you! We'll text you soon.</p>
+        <p class="text-emerald-700 mt-3">Thank you! We'll text or call you soon.</p>
       </div>
     </div>
   </section>
